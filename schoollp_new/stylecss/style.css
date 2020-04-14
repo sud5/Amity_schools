@@ -1,0 +1,74 @@
+  .has-text-align-justify {
+            text-align: justify;
+        }
+		.counetr{font-size:30px ; font-weight:700!important}
+		
+   img#wpstats {
+            display: none;
+        }
+		.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    
+    margin: 0 0 0 85px;
+}
+
+ .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+ .btndesg {
+            border-radius: 2px;
+            padding: 15px 48px;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            background-color: #1e93ea;
+            color: #fff !important;
+            font-family: Montserrat,'Open Sans',sans-serif !important;
+			margin-top: 15px !important;
+    float: left;
+        }
+ .form .mktoFormRow:nth-child(10) > .mktoFormCol, .form .mktoFormRow:nth-child(9) > .mktoFormCol, .form .mktoFormRow:nth-child(11) > .mktoFormCol {
+            flex-basis: 100% !important;
+        }
+
+        #faqs ul, .side-image ul {
+            margin-left: 30px;
+        }
+
+        .side-image img {
+            margin: 0 auto;
+            max-width: 450px;
+        }
+
+        .side-image a {
+            color: #007bff;
+        }
+
+        .side-image ul li {
+            margin-bottom: 10px;
+        }
+
+        .hero-bg-side-img.light-blue .img-wrapper:before {
+            background-image: linear-gradient(90deg,#D8F0F8 50%,rgba(255,255,255,0) 100%) !important;
+            width: 80% !important;
+        }
+		
+		
+.logo img{width: 30%;margin-top: 10px;}	
+ul#main-menu {
+    list-style-type: none;
+    padding-top: 25px;
+}
+li#menu-item-5869 {
+    border-right: 1px solid #036;
+}	
+
+@media screen and (min-device-width: 360px) and (max-device-width: 480px) { 
+  .owl-carousel.owl-theme.owl-loaded.owl-drag {
+    margin-left: 1px !important;
+}
+}		
