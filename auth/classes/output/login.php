@@ -151,6 +151,16 @@ class login implements renderable, templatable {
         $data->signupurl = $this->signupurl->out(false);
         $data->username = $this->username;
         $data->logintoken = $this->logintoken;
+        //customization for adding tenant name on the page
+        global $DB, $SITE;
+        $link .= $_SERVER['HTTP_HOST'];
+        $string = $link;
+        $search = ".amitylms.com";
+        $position = strpos($string, $search);
+        $company_short_name = substr($link, 0, $position);
+        $company_name = $DB->get_field('company','name',array('shortname' => $company_short_name));
+        $tenant_name =!empty($company_name) ? $company_name : format_string($SITE->fullname);
+        $data->tenantname = $tenant_name;
         $data->maintenance = format_text($this->maintenance, FORMAT_MOODLE);
 
         return $data;
