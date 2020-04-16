@@ -1,21 +1,3 @@
-<style>
-    .wrap-brand {
-    
-    width: 20%;
-    margin: auto;
-}
-
-.wrap-brand img{width:250px;    padding-top: 20px; margin-bottom: -32px;}
-
-@media screen and (min-device-width: 320px) and (max-device-width: 768px) { 
-   .wrap-brand {
-    
-    width: 62%;
-   
-}
-}
-
-</style>
 <?php
 // This file is part of Moodle - http://moodle.org/
 //
@@ -49,45 +31,35 @@ require_once($CFG->dirroot . '/user/editlib.php');
 
 class login_signup_form extends moodleform implements renderable, templatable {
     function definition() {
-        global $USER, $CFG; 
-        ?>
-<div class="wrap-brand">
-    <img src="http://amigolms.amityonline.com/pluginfile.php/1/theme_moove/logo/1584439761/Amigo%20logo%20new3.png">
-</div>
-       <?php 
-       $mform = $this->_form;
+        global $USER, $CFG;
 
-        $mform->addElement('header', 'createuserandpass', get_string('createuserandpass'), '');
+        $mform = $this->_form;
+
+//        $mform->addElement('header', 'createuserandpass', get_string('createuserandpass'), '');
 
 
-        $mform->addElement('text', 'username', get_string('username'), 'maxlength="100" size="30" autocapitalize="none"');
+        $mform->addElement('text', 'username', get_string('username'), 'placeholder="Username" maxlength="100" size="12" autocapitalize="none"');
+//        $mform->addElement('text', 'username', '', 'placeholder="Username" maxlength="100" size="12" autocapitalize="none"');
         $mform->setType('username', PARAM_RAW);
         $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
 
-        if (!empty($CFG->passwordpolicy)){
-            $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());
-        }
-        $mform->addElement('password', 'password', get_string('password'), 'maxlength="32" size="30"');
+//        if (!empty($CFG->passwordpolicy)){
+//            $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());
+//        }
+		
+        $mform->addElement('password', 'password', get_string('password'), 'placeholder="Password" maxlength="32" size="12"');
+//        $mform->addElement('password', 'password', '', 'placeholder="Password" maxlength="32" size="12"');
+        $mform->addHelpButton('password', 'password');
         $mform->setType('password', core_user::get_property_type('password'));
         $mform->addRule('password', get_string('missingpassword'), 'required', null, 'client');
 
-        $mform->addElement('header', 'supplyinfo', get_string('supplyinfo'),'');
-
-        profile_signup_fields($mform);
+//        $mform->addElement('header', 'supplyinfo', get_string('supplyinfo'),'');
         
-        $mform->addElement('text', 'email', get_string('email'), 'maxlength="100" size="30"');
-        $mform->setType('email', core_user::get_property_type('email'));
-        $mform->addRule('email', get_string('missingemail'), 'required', null, 'client');
-        $mform->setForceLtr('email');
+                $namefields = useredit_get_required_name_fields();
 
-        $mform->addElement('text', 'email2', get_string('emailagain'), 'maxlength="100" size="30"');
-        $mform->setType('email2', core_user::get_property_type('email'));
-        $mform->addRule('email2', get_string('missingemail'), 'required', null, 'client');
-        $mform->setForceLtr('email2');
-
-        $namefields = useredit_get_required_name_fields();
         foreach ($namefields as $field) {
-            $mform->addElement('text', $field, get_string($field), 'maxlength="100" size="30"');
+            $mform->addElement('text', $field, get_string($field), 'placeholder="First Name"maxlength="100" size="30"');
+//            $mform->addElement('text', $field, '', 'placeholder="First Name"maxlength="100" size="30"');
             $mform->setType($field, core_user::get_property_type('firstname'));
             $stringid = 'missing' . $field;
             if (!get_string_manager()->string_exists($stringid, 'moodle')) {
@@ -96,7 +68,20 @@ class login_signup_form extends moodleform implements renderable, templatable {
             $mform->addRule($field, get_string($stringid), 'required', null, 'client');
         }
 
-        $mform->addElement('text', 'city', get_string('city'), 'maxlength="120" size="30"');
+        $mform->addElement('text', 'email', get_string('email'), 'placeholder="email" maxlength="100" size="30"');
+//        $mform->addElement('text', 'email', '', 'placeholder="Email" maxlength="100" size="25"');
+        $mform->setType('email', core_user::get_property_type('email'));
+        $mform->addRule('email', get_string('missingemail'), 'required', null, 'client');
+        $mform->setForceLtr('email');
+
+//        $mform->addElement('text', 'email2', get_string('emailagain'), 'placeholder="email again" maxlength="100" size="25"');
+//        $mform->addElement('text', 'email2', '', 'placeholder="Email Again" maxlength="100" size="25"');
+//        $mform->setType('email2', core_user::get_property_type('email'));
+//        $mform->addRule('email2', get_string('missingemail'), 'required', null, 'client');
+//        $mform->setForceLtr('email2');
+
+
+        /*$mform->addElement('text', 'city', get_string('city'), 'placeholder="Your City/Town"maxlength="120" size="20"');
         $mform->setType('city', core_user::get_property_type('city'));
         if (!empty($CFG->defaultcity)) {
             $mform->setDefault('city', $CFG->defaultcity);
@@ -108,12 +93,13 @@ class login_signup_form extends moodleform implements renderable, templatable {
         $mform->addElement('select', 'country', get_string('country'), $country);
 
         if( !empty($CFG->country) ){
-            $mform->setDefault('country', $CFG->country, 'maxlength="120" size="30"');
+            $mform->setDefault('country', $CFG->country);
         }else{
-            $mform->setDefault('country', '', 'maxlength="120" size="30"');
-        }
+            $mform->setDefault('country', '');
+        }*/
 
-//        profile_signup_fields($mform);
+        profile_signup_fields($mform,true);
+        $mform->addElement('static', 'urldomain', '', '.amigolms.com');
 
         if (signup_captcha_enabled()) {
             $mform->addElement('recaptcha', 'recaptcha_element', get_string('security_question', 'auth'));

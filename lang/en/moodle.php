@@ -395,7 +395,7 @@ $string['courseupdates'] = 'Course updates';
 $string['coursevisibility'] = 'Course visibility';
 $string['coursevisibility_help'] = 'This setting determines whether the course appears in the list of courses and whether students can access it. If set to Hide, then access is restricted to users with the capability to view hidden courses (such as teachers).';
 $string['create'] = 'Create';
-$string['createaccount'] = 'Create my new account';
+$string['createaccount'] = 'Create account';
 $string['createcategory'] = 'Create category';
 $string['createfolder'] = 'Create a folder in {$a}';
 $string['createnew'] = 'Create new';
@@ -604,16 +604,10 @@ which you can just click on.  If that doesn\'t work,
 then cut and paste the address into the address
 line at the top of your web browser window.
 
-Please watch Amigo demo video for a better understanding of how to use our product.
-https://youtu.be/QYM2hI_SBSc
-
-For further assistance, please contact Amigo Team.
-
-With Regards,
-Amigo Team
-+91-  7428001444';
+If you need help, please contact the site administrator,
+{$a->admin}';
 $string['emailconfirmationresend'] = 'Resend confirmation email';
-$string['emailconfirmationsubject'] = 'Welcome to {$a}';
+$string['emailconfirmationsubject'] = '{$a}: account confirmation';
 $string['emailconfirmsent'] = '<p>An email should have been sent to your address at <b>{$a}</b></p>
    <p>It contains easy instructions to complete your registration.</p>
    <p>If you continue to have difficulty, contact the site administrator.</p>';
@@ -849,7 +843,7 @@ $string['forcepasswordchangenot'] = 'Could not force a password change to {$a}';
 $string['forcepasswordchangenotice'] = 'You must change your password to proceed.';
 $string['forcetheme'] = 'Force theme';
 $string['forgotaccount'] = 'Lost password?';
-$string['forgotten'] = 'Forgotten your username or password?';
+$string['forgotten'] = 'Forget password?';
 $string['forgottenduplicate'] = 'The email address is shared by several accounts, please enter username instead';
 $string['forgotteninvalidurl'] = 'Invalid password reset URL';
 $string['format'] = 'Format';
@@ -1487,6 +1481,7 @@ $string['participantslist'] = 'Participants list';
 $string['participationratio'] = 'Participation ratio';
 $string['participationreport'] = 'Participation report';
 $string['password'] = 'Password';
+$string['password_help'] = 'The password must have at least 8 characters, at least 1 digit(s), at least 1 lower case letter(s), at least 1 upper case letter(s), at least 1 non-alphanumeric character(s) such as as *, -, or #';
 $string['passwordconfirmchange'] = 'Confirm password change';
 $string['passwordextlink'] = 'The following link has been provided to recover your lost password. This will take you out of Moodle.';
 $string['passwordforgotten'] = 'Forgotten password';

@@ -760,6 +760,7 @@ function profile_signup_fields($mform) {
 
     if ($fields = profile_get_signup_fields()) {
         foreach ($fields as $field) {
+//            $field->object->field->name = '';
             // Check if we change the categories.
             if (!isset($currentcat) || $currentcat != $field->categoryid) {
                  $currentcat = $field->categoryid;

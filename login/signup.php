@@ -1,8 +1,17 @@
 <style>
-    .wrap-brand {
+    .collapsible-actions {
     display: none !important;
 }
+
+.text-danger {
+  display: none;
+}
+.form-control-static{
+    margin-left: 103px;
+    margin-top: -90px;
+}
 </style>
+
 <?php
 
 // This file is part of Moodle - http://moodle.org/
@@ -89,6 +98,7 @@ if ($mform_signup->is_cancelled()) {
 
 } else if ($user = $mform_signup->get_data()) {
     // Add missing required fields.
+    $user->email2 = $user->email;
     $user = signup_setup_new_user($user);
 
     $authplugin->user_signup($user, true); // prints notice and link to login/index.php
@@ -122,3 +132,10 @@ if ($mform_signup instanceof renderable) {
     $mform_signup->display();
 }
 echo $OUTPUT->footer();
+?>
+<script>
+ document.getElementById("id_lastname").placeholder = "Last Name"; 
+ document.getElementById("id_profile_field_school_name").placeholder = "School Name";
+ document.getElementById("id_profile_field_school_short_name").placeholder = "url";
+ document.getElementById("id_profile_field_school_short_name").size = 5;
+</script>

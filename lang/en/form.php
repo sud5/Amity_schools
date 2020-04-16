@@ -1,3 +1,5 @@
+
+
 <?php
 // This file is part of Moodle - http://moodle.org/
 //
@@ -79,7 +81,7 @@ $string['selecteditems'] = 'Selected items:';
 $string['showadvanced'] = 'Show advanced';
 $string['showless'] = 'Show less...';
 $string['showmore'] = 'Show more...';
-$string['somefieldsrequired'] = 'There are required fields in this form marked {$a}.';
+$string['somefieldsrequired'] = '';
 $string['time'] = 'Time';
 $string['timeunit'] = 'Time unit';
 $string['timing'] = 'Timing';
