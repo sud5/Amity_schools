@@ -58,7 +58,7 @@ class login_signup_form extends moodleform implements renderable, templatable {
                 $namefields = useredit_get_required_name_fields();
 
         foreach ($namefields as $field) {
-            $mform->addElement('text', $field, get_string($field), 'placeholder="First Name"maxlength="100" size="30"');
+            $mform->addElement('text', $field, get_string($field), 'placeholder="First name"maxlength="100" size="30"');
 //            $mform->addElement('text', $field, '', 'placeholder="First Name"maxlength="100" size="30"');
             $mform->setType($field, core_user::get_property_type('firstname'));
             $stringid = 'missing' . $field;

@@ -134,7 +134,7 @@ if ($mform_signup instanceof renderable) {
 echo $OUTPUT->footer();
 ?>
 <script>
- document.getElementById("id_lastname").placeholder = "Last Name"; 
+ document.getElementById("id_lastname").placeholder = "Last name"; 
  document.getElementById("id_profile_field_school_name").placeholder = "School Name";
  document.getElementById("id_profile_field_school_short_name").placeholder = "url";
  document.getElementById("id_profile_field_school_short_name").size = 5;
