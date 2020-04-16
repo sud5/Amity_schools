@@ -60,7 +60,7 @@ if (!isloggedin()) { ?>
                             <div class="header_wrap d-flex justify-content-between align-items-center">
                                 <div class="header_left">
                                     <div class="logo">
-                                        <a href="http://localhost/amigo-lms/index-2.php">
+                                        <a href=<?php echo $CFG->wwwroot.'/index.php' ?>>
                                             <img src="amigo/assets/images/logo.jpg" alt="Amigo logo" class="logo-brand">
                                         </a>
                                     </div>
