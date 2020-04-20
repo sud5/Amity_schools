@@ -17,7 +17,7 @@
 // Define the  menu items that are defined by this plugin
 
 function local_report_license_usage_menu() {
-
+return array();
         return array(
             'licenseusage' => array(
                 'category' => 'Reports',

@@ -25,7 +25,7 @@ function local_report_completion_monthly_menu() {
                 'name' => get_string('pluginname', 'local_report_completion_monthly'),
                 'url' => '/local/report_completion_monthly/index.php',
                 'cap' => 'local/report_completion_monthly:view',
-                'icondefault' => 'report',
+                'icondefault' => 'completion-report-month',
                 'style' => 'report',
                 'icon' => 'fa-check-square-o',
                 'iconsmall' => 'fa-bar-chart-o',

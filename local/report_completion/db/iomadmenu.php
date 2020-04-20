@@ -25,7 +25,7 @@ function local_report_completion_menu() {
                 'name' => get_string('pluginname', 'local_report_completion'),
                 'url' => '/local/report_completion/index.php',
                 'cap' => 'local/report_completion:view',
-                'icondefault' => 'report',
+                'icondefault' => 'completion-report-course',
                 'style' => 'report',
                 'icon' => 'fa-check-square-o',
                 'iconsmall' => 'fa-bar-chart-o',

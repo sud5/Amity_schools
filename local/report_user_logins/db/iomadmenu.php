@@ -25,7 +25,7 @@ function local_report_user_logins_menu() {
                 'name' => get_string('pluginname', 'local_report_user_logins'),
                 'url' => '/local/report_user_logins/index.php',
                 'cap' => 'local/report_user_logins:view',
-                'icondefault' => 'report',
+                'icondefault' => 'user-login',
                 'style' => 'report',
                 'icon' => 'fa-group',
                 'iconsmall' => 'fa-bar-chart-o',

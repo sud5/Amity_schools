@@ -25,7 +25,7 @@ function local_report_users_menu() {
                 'name' => get_string('pluginname', 'local_report_users'),
                 'url' => '/local/report_users/index.php',
                 'cap' => 'local/report_users:view',
-                'icondefault' => 'report',
+                'icondefault' => 'user-report',
                 'style' => 'report',
                 'icon' => 'fa-users',
                 'iconsmall' => 'fa-bar-chart-o',

@@ -25,7 +25,7 @@ function local_report_emails_menu() {
                 'name' => get_string('pluginname', 'local_report_emails'),
                 'url' => '/local/report_emails/index.php',
                 'cap' => 'local/report_emails:view',
-                'icondefault' => 'report',
+                'icondefault' => 'emailtemplates',
                 'style' => 'report',
                 'icon' => 'fa-envelope',
                 'iconsmall' => 'fa-bar-chart-o',

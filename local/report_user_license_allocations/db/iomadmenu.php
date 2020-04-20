@@ -17,7 +17,7 @@
 // Define the  menu items that are defined by this plugin
 
 function local_report_user_license_allocations_menu() {
-
+ return array();
         return array(
             'userlicenseallocations' => array(
                 'category' => 'Reports',

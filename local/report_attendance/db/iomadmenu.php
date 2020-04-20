@@ -25,7 +25,7 @@ function local_report_attendance_menu() {
                 'name' => get_string('pluginname', 'local_report_attendance'),
                 'url' => '/local/report_attendance/index.php',
                 'cap' => 'local/report_attendance:view',
-                'icondefault' => 'report',
+                'icondefault' => 'Attendance-Report',
                 'style' => 'report',
                 'icon' => 'fa-clock-o',
                 'iconsmall' => 'fa-bar-chart-o',
