@@ -1,0 +1,24 @@
+.btn-animation-line {
+    .apply-animation{
+        position: relative; 
+        transition: all 300ms; 
+        &:after{
+            position: absolute;
+            content: " ";
+            width: 0;
+            bottom: 0px;
+            left: 0;
+            height: 1px;
+            background: #456bed;
+            transition: all 300ms; 
+        }
+    }
+    &:hover .apply-animation{ 
+        letter-spacing: 1px;
+        &:after{ 
+            width: 100%; 
+        }
+    }
+    
+}
+ 

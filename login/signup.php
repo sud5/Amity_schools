@@ -1,16 +1,3 @@
-<style>
-    .collapsible-actions {
-    display: none !important;
-}
-
-.text-danger {
-  display: none;
-}
-.form-control-static{
-    margin-left: 103px;
-    margin-top: -90px;
-}
-</style>
 
 <?php
 
@@ -131,11 +118,15 @@ if ($mform_signup instanceof renderable) {
     // Fall back for auth plugins not using renderables.
     $mform_signup->display();
 }
+?>
+
+<script>
+    document.getElementById("id_lastname").placeholder = "Last name";
+    document.getElementById("id_profile_field_school_name").placeholder = "School Name";
+    document.getElementById("id_profile_field_school_short_name").placeholder = "url";
+    document.getElementById("id_profile_field_school_short_name").size = 5;
+</script>
+
+<?php
 echo $OUTPUT->footer();
 ?>
-<script>
- document.getElementById("id_lastname").placeholder = "Last name"; 
- document.getElementById("id_profile_field_school_name").placeholder = "School Name";
- document.getElementById("id_profile_field_school_short_name").placeholder = "url";
- document.getElementById("id_profile_field_school_short_name").size = 5;
-</script>

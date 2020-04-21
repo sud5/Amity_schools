@@ -8,12 +8,29 @@
         "formhtml": "<p>(Form html would go here)</p>"
     }
 }}
-<div class="container-fluid">
-    <div class="row row justify-content-center">
-        <div class="col-8">
-            <div class="card">
-                <div class="card-block">
-                    <div class="card-title text-xs-center">
+<section class="amigo-custom-account">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 pb-5 pb-lg-0 d-flex align-items-center order-last order-lg-first ">
+                <div class="hero-caption w-100 text-center text-lg-left">
+
+                    <h1 class="heading-text font-weight-bolder d-none d-lg-block">
+                        Taking Student Learning Online With Amigo For School / Institute / University
+                    </h1>
+                    <p class=" d-none d-lg-block">
+                        We’re here to provide FREE access to Amity’s powerful Learning Management System!
+                    </p>
+                    <div class="w-100 mt-5 d-flex justify-content-center justify-content-lg-start">
+                        <a href="index.php">
+                            Already have an account ?
+                            <button class="btn btn-danger btn-lg">Login</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 px-0 px-lg-3">
+                <div class="amigo-card-block p-lg-4 p-3">
+                    <div class="card-titletext-xs-center">
                         {{#logourl}}
                             <h2><img src="{{logourl}}" title="{{sitename}}" alt="{{sitename}}"/></h2>
                         {{/logourl}}
@@ -22,12 +39,13 @@
                         {{/logourl}}
                         <!hr>
                     </div>
-                    <div class="card-title">
-                        <h3>{{#str}}newaccount{{/str}}</h3>
+                    <div class="card-title p-3 text-center">
+                        <!-- <h3>{{#str}}newaccount{{/str}}</h3>-->
+                        <h3 class="heading-text font-weight-bolder">Create a new account</h3>
                     </div>
                     {{{formhtml}}}
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>

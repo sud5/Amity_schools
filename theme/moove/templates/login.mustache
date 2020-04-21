@@ -1,51 +1,4 @@
-<link rel="stylesheet" href="../amigo/vendors/bootstrap/dist/css/bootstrap.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../amigo/assets/dist/css/app.css">
-	
-	<link rel="stylesheet" href="../amigo/assets/dist/css/header-bootstrap.min.css">
-	
-	<link rel="stylesheet" href="../amigo/assets/dist/css/header-slicknav.css">
-	
-	<link rel="stylesheet" href="../amigo/assets/dist/css/header-style.css">
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-div#sticky-header {
-    background: #fff;
-	    height: 78px;
-}
-.logo {
-    /* border: 1px solid; */
-    margin-left: 98%;
-}
-.footer-bg2 li {
-    display: block;
-}
-.Appointment {
-    display: inherit;
-}
-
-.header_right.d-flex.align-items-center {
-   width: 20%;
-}
-
-@media screen and (min-device-width: 320px) and (max-device-width: 480px){
-.logo {
-    /* border: 1px solid; */
-    margin-left: 0% !important;
-}
-
-img.logo-brand {
-    width: 90px !important;
-	    margin-top: 15%;
-}
-
-.header_right.d-flex.align-items-center {
-   width: 55%;
-}
-}/*Media 320 end here*/
-</style>
 
 {{!
     This file is part of Moodle - http://moodle.org/
@@ -81,67 +34,6 @@ img.logo-brand {
 
 {{{ output.doctype }}}
 <html {{{ output.htmlattributes }}}>
-<!-- Header -->
-    <header>
-        <div class="header-area ">
-            
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="header_wrap d-flex justify-content-between align-items-center">
-                                <div class="header_left">
-                                    <div class="logo">
-                                        <a href="{{config.wwwroot}}/index.php">
-                                            <img src="{{config.wwwroot}}/amigo/assets/images/logo.jpg" alt="Amigo logo" class="logo-brand">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="header_right d-flex align-items-center">
-                                    <!--<div class="main-menu  d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">
-                                                <li><a  href="index.html">home</a></li>
-                                                <li><a href="Courses.html">Courses</a></li>
-                                                <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="blog.html">blog</a></li>
-                                                        <li><a href="single-blog.html">single-blog</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                    <ul class="submenu">
-                                                        <li><a href="Event.html">Event</a></li>
-                                                        <li><a href="event_details.html">Event Details</a></li>
-                                                        <li><a href="Admissions.html">Admissions</a></li>
-                                                        <li><a href="elements.html">elements</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>-->
-                                    <div class="Appointment">
-                                        <div class="press-login">
-                                            <a href="{{config.wwwroot}}/login/index.php">Login </a>
-                                        </div>
-										
-										<div class="btn btn-danger px-4">
-                                            <a href="{{config.wwwroot}}/login/signup.php?">Sign Up </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header-end -->
 <head>
     <title>{{{ output.page_title }}}</title>
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
@@ -151,6 +43,55 @@ img.logo-brand {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="../amigo/vendors/bootstrap/dist/css/bootstrap.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../amigo/assets/dist/css/app.css">
+
+    <link rel="stylesheet" href="../amigo/assets/dist/css/header-bootstrap.min.css">
+
+    <link rel="stylesheet" href="../amigo/assets/dist/css/header-slicknav.css">
+
+    <link rel="stylesheet" href="../amigo/assets/dist/css/header-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        div#sticky-header {
+            background: #fff;
+            height: 78px;
+        }
+        .logo {
+            /* border: 1px solid; */
+            margin-left: 98%;
+        }
+        .footer-bg2 li {
+            display: block;
+        }
+        .Appointment {
+            display: inherit;
+        }
+
+        .header_right.d-flex.align-items-center {
+            width: 20%;
+        }
+
+        @media screen and (min-device-width: 320px) and (max-device-width: 480px){
+            .logo {
+                /* border: 1px solid; */
+                margin-left: 0% !important;
+            }
+
+            img.logo-brand {
+                width: 90px !important;
+                margin-top: 15%;
+            }
+
+            .header_right.d-flex.align-items-center {
+                width: 55%;
+            }
+        }/*Media 320 end here*/
+    </style>
+
 </head>
 
 <body {{{ bodyattributes }}}>
@@ -163,155 +104,12 @@ img.logo-brand {
 
     <div id="page" class="container-fluid mt-0">
         <div id="page-content" class="row">
-		
             <div id="region-main-box" class="col-12">
                 <section id="region-main" class="col-12">
                    {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
                     {{{ output.course_content_footer }}}
                 </section>
-				<!--my code end here
-					<div class="login">
-						<div class="row">
-							<div class="col-md-7" style="background:#b93523">
-								<h1 style="color:#fff">Sign Up</h1>
-								<form class="login100-form validate-form">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											
-											<input class="input100" type="text" name="email" placeholder="First Name">
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											<input class="input100" type="text" name="email" placeholder="Last Name ">
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											
-											<input class="input100" type="text" name="email" placeholder="School/Organisation">
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											<select id="organisation">
-												<option value="volvo">Organisation Type</option>
-												<option value="volvo">Amity Oline</option>
-												<option value="saab">Amity School</option>
-												<option value="mercedes">Amity University</option>
-												<option value="audi">Amity jaipur</option>
-											</select>
-										
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											<select id="organisation">
-												<option value="volvo">Job Type</option>
-												<option value="volvo">Govt</option>
-												<option value="saab">Private</option>
-												<option value="mercedes">Central Govt</option>
-												
-											</select>
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											<input class="input100" type="text" name="email" placeholder="Email ">
-											
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											<input class="input100" type="text" name="email" placeholder="phone No ">
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-											
-											<select id="organisation">
-												<option value="volvo">Country</option>
-												<option value="volvo">India</option>
-												<option value="saab">Us</option>
-												<option value="mercedes">Australia Azerbaijan </option>
-												<option value="mercedes">Azerbaijan </option>
-												
-											</select>
-										</div>
-										
-										</div>
-										<a href="#"class="next-step"><button type="button" class="next-button">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
-										
-									</div>
-					
-								</form>
-							</div>Sign Up ENd here
-							
-							<div class="col-md-5">
-								<h1>Login </h1>
-								
-								
-								
-								
-								
-								
-								<ul>
-								<li><input type="checkbox"> School/ Institute</li>
-								<li><input type="checkbox"> Student</li>
-								<li><input type="checkbox"></li>
-								</ul>
-								<form class="login100-form validate-form">
-									<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-										<label class="lable">Full Name </label>
-										<input class="input100 input-type-text" type="text" placeholder="name">
-										<span class="focus-input100"></span>
-										
-									</div>
-					
-					
-									<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-										<label class="lable">Email</label>
-										<input class="input100 input-type-text" type="text" placeholder="Email">
-										<span class="focus-input100"></span>
-										
-									</div>
-									
-									<div class="row">
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-										<label class="lable">Password</label>
-										<input class="input100 input-type-text" type="password" placeholder="password">
-										
-										</div>
-										</div>
-										
-										<div class="col-md-6">
-											<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-										<label class="lable">Confirm Password</label>
-										<input class="input100 input-type-text" type="password" placeholder="password">
-										
-										</div>
-										</div>
-										
-										<button type="buton" class="sign-up">Sign Up </button>
-										<button type="buton" class="log-in">Log in </button>
-									</div>
-					
-								</form>
-							</div>
-						</div>
-
-					</div>
-				my code end here-->
             </div>
 			
 			
@@ -319,68 +117,6 @@ img.logo-brand {
     </div>
 </div>
 
-<footer class="bg-primary py-5 footer-bg2">
-        <div class="container">
-              <div class="row">
-			
-				<div class="col-md-3">
-					<h4>Product</h4>
-					<ul>
-						<li>Amigo-LMS</li>
-						<li>Amity online</li>
-						<li>Amity School</li>
-						<li>Amity Future Academy</li>
-					</ul>
-				</div>
-				
-				<div class="col-md-3">
-					<h4>Other Links</h4>
-					<ul>
-						<li>About </li>
-						<li>Terms of Use</li>
-						<li>Privacy Policy</li>
-						
-					</ul>
-				</div>
-				
-				
-				
-				<div class="col-md-3 social-icon">
-					<h4>Stay in Touch</h4>
-					<ul>
-						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>  </li>
-						<li><a href="https://twitter.com/login"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a> </li>
-						<li><a href="https://www.linkedin.com/login"><i class="fa fa-Linkedin-square" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.youtube.com/"><i class="fa fa-Youtube-square" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				
-				<div class="col-md-3">
-					<h4>Contact Us</h4>
-					<p>phone no :7428001444 </p>
-					<p>Email id :info@gmail.com </p>
-						
-				</div>
-				
-				
-			</div>
-			
-			<!--<div class="row">
-                <div class="col-12 text-white text-center">
-                    <p>For Technical Support - 7428001444 (Monday to Friday 9 AM - 6 PM).</p>
-                    <ul class="list-unstyled mb-0 d-inline-flex flex-wrap mb-3">
-                        <li><a href="#!" class="px-3 text-light">Terms of Use</a></li>
-                        <li><a href="#!" class="px-3 text-light">Privacy Policy</a></li>
-                        <li><a href="#!" class="px-3 text-light">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 text-muted text-center small">
-                    <hr>
-                    2020 Amity Online. All rights reserved.
-                </div>
-            </div>-->
-        </div>
-    </footer>
 
 {{{ output.standard_footer_html }}}
 
@@ -391,8 +127,9 @@ img.logo-brand {
 	<script src="amigo/assets/dist/js/jquery-1.12.4.min.js"></script>
 	<script src="amigo/assets/dist/js/jquery.slicknav.min.js"></script>
 	<script src="amigo/assets/dist/js/main.js"></script>
+{{#js}}
+    require(['theme_boost/loader']);
+{{/js}}
+
 </body>
 </html>
-{{#js}}
-require(['theme_boost/loader']);
-{{/js}}

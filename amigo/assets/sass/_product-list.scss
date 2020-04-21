@@ -1,0 +1,31 @@
+.product-list {
+    a>img {
+        width:100%;
+        /* @media(min-width:768px){
+        width: calc(10rem - 4vw);
+     } */
+    } 
+    
+
+    .col-img {
+        width:20%; 
+        @media(min-width:768px){
+            width:200px;
+         }
+    }
+
+    .col-caption{ 
+        width: 80%; 
+        @media(min-width:768px){
+            width: calc(100% - 200px - 200px);
+         }
+
+        h4{
+            font-size:calc(1rem + 0.2vw)
+        }
+    }
+    
+    .col-button { 
+        width:  150px;
+    }
+} 

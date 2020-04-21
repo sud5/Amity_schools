@@ -1,0 +1,21 @@
+ 
+/* .navbar-brand{
+    font-size:calc(2rem + 0.3vw);
+} */
+.header-bar {
+    transition: all 0.5s ease;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    &.fixedheader {
+        transition: all 0.2s ease;
+        top: 0px;
+        position: fixed;
+    }
+    &.default-header {
+        position: fixed;
+        transition: all 0.2s ease;
+        top: -150px;
+    }
+}
+ 

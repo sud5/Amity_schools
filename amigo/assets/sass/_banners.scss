@@ -1,0 +1,66 @@
+.hero{
+    
+    
+    .hero-caption{ 
+        bottom:0px;
+    }
+}
+
+.heading-text{
+    //font-family:var(--heading-font);
+   font-size: calc(2rem + 0.6vw); 
+   // font-size: calc(1rem + 1.6vw);
+}
+
+
+
+
+/* bg shapes */
+.bg-shapes-section {
+    background-image: -moz-linear-gradient(140deg, #672dde 0%, #4069eb 100%);
+    background-image: -webkit-linear-gradient(140deg, #672dde 0%, #4069eb 100%);
+    background-image: -ms-linear-gradient(140deg, #672dde 0%, #4069eb 100%);
+    padding: 120px 0px 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .shap{  
+        position: absolute;
+        opacity: 0.2;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-radius: 45px;
+        left: 90px;
+        z-index: -1; 
+        width: 650px;
+        height: 510px; 
+
+        &.one{ 
+            background: white;
+            top: -290px;
+            left: -50px;
+        } 
+        &.two{
+            background: white;
+            top: -260px;
+            left: 100px;
+        }
+        &.three {
+            background: white;
+            top: auto;
+            left: 47%;
+            bottom: -300px;
+        }
+        &.four {
+            background: white;
+            top: auto;
+            left: 63%;
+            bottom: -280px;
+        }
+
+    }
+}
+
+ 

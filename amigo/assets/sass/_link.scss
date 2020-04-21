@@ -1,0 +1,11 @@
+.nav-light{
+    a{
+        color:#bbbcbd;
+    }
+}
+
+a{
+    &.decoration-none:hover{
+        text-decoration:none;
+    }
+}
