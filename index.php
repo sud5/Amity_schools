@@ -95,7 +95,7 @@ if (!isloggedin()) { ?>
                                         </div>
 										
 										<div class="btn btn-danger px-4">
-                                            <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>>Sing Up </a>
+                                            <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>>Sign Up </a>
                                         </div>
                                     </div>
                                 </div>
