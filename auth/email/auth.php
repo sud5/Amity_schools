@@ -163,17 +163,17 @@ class auth_plugin_email extends auth_plugin_base {
         if ($notify) {
             global $CFG, $PAGE, $OUTPUT;
             $emailconfirm = get_string('emailconfirm');
-            $short_name_fieldid = $DB->get_field('user_info_field', 'id', array('shortname' => 'school_short_name'));
-            $school_short_name = $DB->get_field('user_info_data', 'data', array('fieldid' => $short_name_fieldid, 'userid' => $user->id));
+//            $short_name_fieldid = $DB->get_field('user_info_field', 'id', array('shortname' => 'school_short_name'));
+//            $school_short_name = $DB->get_field('user_info_data', 'data', array('fieldid' => $short_name_fieldid, 'userid' => $user->id));
             $PAGE->navbar->add($emailconfirm);
             $PAGE->set_title($emailconfirm);
             $PAGE->set_heading($PAGE->course->fullname);
             echo $OUTPUT->header();
-            if(!empty($school_short_name)){
-            notice(get_string('emailconfirmsent', '', $user->email),  "$CFG->protocol$school_short_name.$CFG->parentsite".'/login/index.php');
-            }else{
+//            if(!empty($school_short_name)){
+//            notice(get_string('emailconfirmsent', '', $user->email),  "$CFG->protocol$school_short_name.$CFG->parentsite".'/login/index.php');
+//            }else{
            notice(get_string('emailconfirmsent', '', $user->email),  "$CFG->wwwroot".'/login/index.php');
-            }
+//            }
         } else {
             return true;
         }
