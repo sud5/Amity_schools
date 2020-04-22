@@ -95,7 +95,7 @@ if (!isloggedin()) { ?>
                                         </div>
 										
 										<div class="btn btn-danger px-4">
-                                            <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>>Sign Up </a>
+                                            <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>>Get Started </a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@ if (!isloggedin()) { ?>
                             We’re here to provide FREE access to Amity’s powerful Learning Management System!
                         </p>
                         <div class="w-100 mt-5 d-flex">
-                            <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>><button class="btn btn-danger btn-lg">Get Start!</button></a>
+                            <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>><button class="btn btn-danger btn-lg">Get Started!</button></a>
 <!--                            <a href="#" class="video-btn ml-lg-5 ml-3 decoration-none btn-animation-line"
                                 data-toggle="modal" data-src="https://www.youtube.com/embed/-C9NIoSiohQ"
                                 data-target="#myVideo">
@@ -342,7 +342,7 @@ if (!isloggedin()) { ?>
                         subway, or wherever you learn best.
                     </p>
                     <div class="w-100 mt-5 d-flex">
-                        <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>><button class="btn btn-danger btn-lg">Get Start!</button></a>
+                        <a href=<?php echo $CFG->wwwroot.'/login/signup.php'?>><button class="btn btn-danger btn-lg">Get Started!</button></a>
 <!--                        <a href="#!" class="video-btn ml-lg-5 ml-3 decoration-none btn-animation-line"
                             data-toggle="modal" data-src="https://www.youtube.com/embed/-C9NIoSiohQ"
                             data-target="#myVideo">
@@ -389,7 +389,7 @@ if (!isloggedin()) { ?>
 			</div>
 			
 			<div class="col-md-2 footer-button">
-				<button type="button" class="">Get Start </button>
+				<button type="button" class="">Get Started </button>
 			</div>
 			
 		</div>
