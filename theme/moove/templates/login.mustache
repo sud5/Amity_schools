@@ -1,5 +1,3 @@
-
-
 {{!
     This file is part of Moodle - http://moodle.org/
 
@@ -34,24 +32,26 @@
 
 {{{ output.doctype }}}
 <html {{{ output.htmlattributes }}}>
+
 <head>
     <title>{{{ output.page_title }}}</title>
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
     {{{ output.standard_head_html }}}
+    <base href="http://localhost/amigo/Amity_schools/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="../amigo/vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="amigo/vendors/bootstrap/dist/css/bootstrap.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../amigo/assets/dist/css/app.css">
+    <link rel="stylesheet" href="amigo/assets/dist/css/app.css">
 
-    <link rel="stylesheet" href="../amigo/assets/dist/css/header-bootstrap.min.css">
+    <link rel="stylesheet" href="amigo/assets/dist/css/header-bootstrap.min.css">
 
-    <link rel="stylesheet" href="../amigo/assets/dist/css/header-slicknav.css">
+    <link rel="stylesheet" href="amigo/assets/dist/css/header-slicknav.css">
 
-    <link rel="stylesheet" href="../amigo/assets/dist/css/header-style.css">
+    <link rel="stylesheet" href="amigo/assets/dist/css/header-style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -91,19 +91,37 @@
             }
         }/*Media 320 end here*/
     </style>
-
 </head>
 
 <body {{{ bodyattributes }}}>
+<header class="header-bar bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container">
 
+        <a class="navbar-brand" href="index.php">
+            <img src="https://amigolms.com/amigo/assets/images/logo.jpg" alt="amigo" height="50px">
+        </a>
+
+        <!--Navigation Menu -->
+        <ul class="list-unstyled ml-auto d-flex mb-0">
+            <li class="nav-item mr-lg-3">
+                <a class="nav-link" href="login/index.php">
+                    Login
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-danger px-4" href="login/signup.php">Sign up</a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
 <div id="page-wrapper">
-
-
 
     {{{ output.standard_top_of_body_html }}}
 
     <div id="page" class="container-fluid mt-0">
         <div id="page-content" class="row">
+
             <div id="region-main-box" class="col-12">
                 <section id="region-main" class="col-12">
                    {{{ output.course_content_header }}}
@@ -111,11 +129,76 @@
                     {{{ output.course_content_footer }}}
                 </section>
             </div>
-			
-			
+
+
         </div>
     </div>
 </div>
+
+
+<footer class="bg-primary py-5 footer-bg2">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+                <h4>Product</h4>
+                <ul>
+                    <li>Amigo-LMS</li>
+                    <li>Amity online</li>
+                    <li>Amity School</li>
+                    <li>Amity Future Academy</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Other Links</h4>
+                <ul>
+                    <li>About </li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="col-md-3 social-icon">
+                <h4>Stay in Touch</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>  </li>
+                    <li><a href="https://twitter.com/login"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a> </li>
+                    <li><a href="https://www.linkedin.com/login"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Contact Us</h4>
+                <p>phone no :7428001444 </p>
+                <p>Email id :info@gmail.com </p>
+
+            </div>
+
+
+        </div>
+
+        <!--<div class="row">
+            <div class="col-12 text-white text-center">
+                <p>For Technical Support - 7428001444 (Monday to Friday 9 AM - 6 PM).</p>
+                <ul class="list-unstyled mb-0 d-inline-flex flex-wrap mb-3">
+                    <li><a href="#!" class="px-3 text-light">Terms of Use</a></li>
+                    <li><a href="#!" class="px-3 text-light">Privacy Policy</a></li>
+                    <li><a href="#!" class="px-3 text-light">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-12 text-muted text-center small">
+                <hr>
+                2020 Amity Online. All rights reserved.
+            </div>
+        </div>-->
+    </div>
+</footer>
+
 
 
 {{{ output.standard_footer_html }}}
@@ -130,6 +213,5 @@
 {{#js}}
     require(['theme_boost/loader']);
 {{/js}}
-
 </body>
 </html>

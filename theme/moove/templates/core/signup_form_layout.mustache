@@ -8,27 +8,13 @@
         "formhtml": "<p>(Form html would go here)</p>"
     }
 }}
-<section class="amigo-custom-account">
+<section class="amigo-custom-account pb-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 pb-5 pb-lg-0 d-flex align-items-center order-last order-lg-first ">
-                <div class="hero-caption w-100 text-center text-lg-left">
-
-                    <h1 class="heading-text font-weight-bolder d-none d-lg-block">
-                        Taking Student Learning Online With Amigo For School / Institute / University
-                    </h1>
-                    <p class=" d-none d-lg-block">
-                        We’re here to provide FREE access to Amity’s powerful Learning Management System!
-                    </p>
-                    <div class="w-100 mt-5 d-flex justify-content-center justify-content-lg-start">
-                        <a href="index.php">
-                            Already have an account ?
-                            <button class="btn btn-danger btn-lg">Login</button>
-                        </a>
-                    </div>
-                </div>
+            <div class="col-12 text-center mb-4">
+                <img src="amigo/assets/images/amigo-logo.png" alt="Amigo Logo" width="200px">
             </div>
-            <div class="col-12 col-lg-7 px-0 px-lg-3">
+            <div class="col-12 col-lg-6 offset-lg-3 px-0 px-lg-3">
                 <div class="amigo-card-block p-lg-4 p-3">
                     <div class="card-titletext-xs-center">
                         {{#logourl}}
@@ -44,6 +30,12 @@
                         <h3 class="heading-text font-weight-bolder">Create a new account</h3>
                     </div>
                     {{{formhtml}}}
+                    <div class="w-100 mb-3 d-flex justify-content-center">
+                        <a href="login/index.php" class="font-600">
+                            <span class="text-muted small">Already have an account ?</span>
+                            <span class="text-primary"> Login</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

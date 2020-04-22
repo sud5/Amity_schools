@@ -1,0 +1,28 @@
+ 
+/* .navbar-brand{
+    font-size:calc(2rem + 0.3vw);
+} */
+.header-bar {
+    transition: all 0.5s ease;
+    z-index: 999;
+    width: 100%;
+    &.fixedheader {
+        transition: all 0.2s ease;
+        top: 0px;
+        position: fixed;
+    }
+    &.default-header {
+        position: fixed;
+        transition: all 0.2s ease;
+        top: -150px;
+    }
+     nav.navbar{
+        position: relative;
+        box-shadow:none;
+    }
+}
+
+#page-login-index.moove-logins .logo img {
+    max-height:unset;
+    width:150px;
+}
