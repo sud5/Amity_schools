@@ -645,7 +645,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
         foreach ($pluginswithfunction as $plugins) {
             foreach ($plugins as $function) {
                 if ($function === 'tool_mobile_standard_footer_html') {
-                    $output .= $this->get_mobileappurl();
+//                    $output .= $this->get_mobileappurl();
 
                     continue;
                 }
