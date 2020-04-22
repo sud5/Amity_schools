@@ -1,25 +1,340 @@
-.footer-bg2 h4,.footer-bg2 p {
-    color: #fff;
+
+ul{
+    list-style-type:none;
 }
-.footer-bg2{
-    color: #fff;
-    ul {
-        text-align: left;
-        padding: 0px;
-        color: #fff;
-        li{
-            color: #fff;
-        }
-    }
+
+.offering-online-courses{
+
+    background: #e2e2e259;
 }
+
+.offering-online-courses h1 {
+    color: #000;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: center;
+    padding: 2% 0;
+    text-transform: uppercase;
+    width: 70%;
+    /* border: 1px solid; */
+    margin: auto;
+}
+
+.offering-online-courses h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    padding-top: 12%;
+}
+.offering-online-courses p {
+    color: #fff;
+    font-size: 17px;
+    padding: 0 64px;
+    padding-top: 0%;
+    text-align: center;
+    line-height: 21px;
+}
+
+a.button-outline {
+    border: 1px solid;
+    width: 50% !important;
+    float: left;
+    margin: 0px 0 0 88px;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+img.img-Logo {
+    margin-left: 35%;
+    margin-top: -5%;
+    padding: 15px;
+}
+
+.Multi-language {
+    margin-left: -3%;
+    opacity: 0.8;
+}
+.manage {
+    margin-left: -3%;
+    opacity: 0.8;
+}
+.learning-button:hover {
+    background: #fff;
+    color: #287a9f;
+}
+
+.Multi-language-button:hover {
+    background: #fff;
+    color: #e61e25;
+}
+
+.manage-button:hover {
+    background: #fff;
+    color: #287a9f;
+}
+
+
+.footer-bg{
+    background-color: #1b68b3 ;    padding: 40 0 80px 0;
+}
+
+.footer-bg h3{
+    color:#fff; text-align:center;width: 100%;
+}
+i.fa.fa {
+    font-size: 28px !important;
+}
+
 .col-md-3.social-icon li {
     display: initial;
     margin: 5px;
 }
-.col-md-3.social-icon li a {
-     color: #fff;
 
-    i.fa.fa {
-        font-size: 28px !important;
+.col-md-3.social-icon li a {
+    color:#fff
+}
+.footer-bg p{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: auto;
+    margin-bottom: 50px;
+}
+
+.footer-bg input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+}
+
+.footer-bg button {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 46px;
+    background: #5d94d3;
+    color: #fff;
+}
+
+.footer-bg2 h4 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.footer-bg2 ul {
+    /* border: 1px solid; */
+    text-align: left;
+    /* margin: 0px; */
+    padding: 0px;    color: #fff;
+}
+
+.footer-bg2 p {
+    color:#fff
+}
+.footer-bg2 h4 {
+    color:#fff
+}
+
+.top-bar-header{
+    width: 100%;
+    padding: 0 140px;
+}
+/*06-04-2020 Css update here (Feture Css start  here*/
+.future-heading {
+    text-align: center;
+    width: 52%;
+    margin: auto;
+    color: #1b68b3 !important;
+    font-family: serif;
+    font-size: 56px;
+}
+.future-pragraph{
+    text-align: center;
+    font-size: 19px;
+    color: #777;
+    font-family: serif;
+    padding: 0 103px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.wrap-divider{
+    background:#f8f8f8
+
+}
+
+.wrap-tab img{width:100%}
+.wrap-tab h2{
+    text-align:center;
+    font-size: 25px;
+    padding: 35px;
+}
+
+.wrap-tab h3 {
+    font-size: 20px;
+    padding: 10px 0px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.wrap-tab p {
+    font-size: 17px;
+    text-align: justify;
+    line-height: 28px;
+}
+.wrap-button {
+    /* border: 2px solid; */
+    width: 79%;
+    margin: auto;
+}
+
+.Extend-training h3{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.wrap-more {
+    background:#f8f8f8;
+    padding: 40px;
+}
+
+.wrap-more h3{
+    text-align:center
+}
+
+img.logo-brand {
+    width: 150px;
+}
+
+.press-login {
+    /* border: 1px solid; */
+    margin: 0 30px 0 0px;
+    color: #036;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn.btn-danger.px-4 {
+    border-radius: 20px !important;
+}
+
+.btn.btn-danger.px-4 a{
+    color: #fff !important;
+
+}
+/*tab css start here*/
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #5c94cc;
+    border-bottom: 2px solid #5c94cc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+
+    border-top: none;
+    width: 100%;
+}
+
+.img-style-suffal {
+    padding-top: 2px !important;
+    padding-bottom: 0px !important;
+    min-height: 665px !important;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .learning {
+        flex: initial;
+        max-width: 58%;
+        margin-left: 18%;
     }
- }
+
+    .Multi-language {
+        flex: initial;
+        max-width: 58%;
+        margin-left: 18%;
+        margin-top: -4%;
+    }
+
+    .manage {
+        flex: initial;
+        max-width: 58%;
+        margin-left: 18%;
+        margin-top: -4%;
+    }
+
+    .offering-online-courses h1 {
+        font-size: 29px;
+        width: 90%;
+    }
+
+
+    h1.heading-text.font-weight-bolder {
+
+        font-size: 35px !important;
+    }
+    .col-md-5.domain {
+        max-width: 100% !important;
+        flex: none;
+    }
+
+    .col-md-5.search-email {
+        max-width: 93% !important;
+        flex: none;
+    }
+
+    .footer-button{
+        flex: none;
+        max-width: 40%;
+        margin-top: 30px;
+    }
+
+    .font-weight-bold {
+
+        font-size: 55px;
+        width: 86%;
+    }
+
+    .mb-5 p {
+        font-size: 42px;
+    }
+
+    .top-bar-header{
+
+        padding: 0px !important;
+    }
+
+
+}

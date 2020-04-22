@@ -6,7 +6,6 @@
     transition: all 0.5s ease;
     z-index: 999;
     width: 100%;
-    position: fixed;
     &.fixedheader {
         transition: all 0.2s ease;
         top: 0px;
@@ -17,5 +16,14 @@
         transition: all 0.2s ease;
         top: -150px;
     }
+     nav.navbar{
+        position: relative;
+        box-shadow:none;
+         min-height: 76px;
+    }
 }
- 
+
+#page-login-index.moove-logins .logo img {
+    max-height:unset;
+    width:150px;
+}
