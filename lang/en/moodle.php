@@ -1299,7 +1299,7 @@ Please be aware that changes may not be saved properly until your connection imp
 $string['never'] = 'Never';
 $string['neverdeletelogs'] = 'Never delete logs';
 $string['new'] = 'New';
-$string['newaccount'] = 'New account';
+$string['newaccount'] = 'New Account';
 $string['newactivityname'] = 'New name for activity {$a}';
 $string['newcourse'] = 'New course';
 $string['newpassword'] = 'New password';
