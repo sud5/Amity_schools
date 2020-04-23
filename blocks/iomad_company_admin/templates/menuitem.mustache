@@ -1,11 +1,11 @@
 {{# items }}
-	<a href="{{ url }}">
-	    <div class="iomadlink mr-2">
-	        <div class="iomadicon {{ style }}">
-	        	<div class="fa fa-topic {{{ icon }}}"></div>
-	            <div class="fa fa-action {{{ iconsmall }}}"></div>
-	        </div>
-	        <div class="actiondescription">{{ action }}</div>
-	    </div>
-	</a>
+    <a href="{{ url }}">
+        <div class="iomadlinks mr-1 d-flex align-items-center">
+            <div class="iomadicon {{ style }}">
+                <div class=" fa fa-topic {{{ icon }}}"></div>
+                <!-- <div class="fa fa-action {{{ iconsmall }}}"></div>-->
+            </div>
+            <div class="actiondescription ml-2">{{ action }}</div>
+        </div>
+    </a>
 {{/ items }}

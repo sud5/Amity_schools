@@ -1,0 +1,90 @@
+.dashboard-task{
+  li{
+    position: relative;
+    padding: 15px 15px;
+    background: #fff;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.12);
+    .icon{
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear;
+      position: absolute;
+      top: 5px;
+      right: 40px;
+      z-index: 0;
+      font-size: 48px;
+      color: rgba(0,0,0,.15);
+    }
+  }
+
+
+  p{
+    line-height: 16px;
+    font-size:12px;
+  }
+}
+
+.iomadlink_container .iomadlink .iomadicon .fa-action, .iomadlink_container .iomadlinkreports .iomadicon .fa-action {
+  border-radius: 15px;
+  color: #fff;
+  background-color: #83d411;
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: -10px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.fa-topic img {
+  width: 30px;
+}
+
+.iomadlink_container > a {
+  min-height: 10px !important;
+  border: 1px solid #ffffff;
+  background: #fff;
+  border-radius: 100px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.nav-tabs{
+  border: 1px solid #f7f7f7;
+  display: inline-flex;
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-item .nav-link {
+  border-radius: 100px;
+  font-size:  0.9rem;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: #0083ff;
+  border-color: #dee2e6 #dee2e6 #eef5f9;
+  color: #fff;
+}
+.tab-content .tab-pane{
+  border: 1px solid #f7f7f7;
+  background: #edeff1;
+  box-shadow: 0px 0px 10px rgba(219, 219, 219, 0.1);
+  border-radius: 4px;
+}
+
+.dashboard-heading + .row.border-secondary{
+  margin-left: 0;
+  margin-right: 4px;
+  border-radius: 0 !important;
+  border-color: #edeff1!important;
+}
+.breadcrumb-button{
+  position: relative;
+  margin-top:10px;
+}

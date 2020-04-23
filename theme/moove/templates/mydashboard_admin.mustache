@@ -1,9 +1,48 @@
 <div class="admininfos">
     {{{ output.mydashboard_admin_header }}}
 
-    <div class="row">
+    <ul class="grid grid-col-md-2 grid-col-lg-4 dashboard-task list-unstyled">
+        <li class="shadow-sm d-flex align-items-center border">
+            <div>
+                <h3>{{{totalusage}}}</h3>
+                <p class="mb-0">{{#str}}diskusage, theme_moove{{/str}}</p>
+                <div class="icon">
+                    <i class="slicon-drawer"></i>
+                </div>
+            </div>
+        </li>
+        <li class="shadow-sm d-flex align-items-center border">
+            <div>
+                <h3>{{{totalactiveusers}}} / {{{totalsuspendedusers}}}</h3>
+                <p class="mb-0">{{#str}}totalusers, theme_moove{{/str}}</p>
+                <div class="icon">
+                    <i class="slicon-people"></i>
+                </div>
+            </div>
+        </li>
+        <li class="shadow-sm d-flex align-items-center border">
+            <div>
+                <h3>{{{totalcourses}}}</h3>
+                <p class="mb-0">{{#str}}totalcourses, theme_moove{{/str}}</p>
+                <div class="icon">
+                    <i class="slicon-graduation"></i>
+                </div>
+            </div>
+        </li>
+        <li class="shadow-sm d-flex align-items-center border">
+            <div>
+                <h3>{{{onlineusers}}}</h3>
+                <p class="mb-0">{{#str}}onlineusers, theme_moove{{/str}}</p>
+                <div class="icon">
+                    <i class="fa fa-plug"></i>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <!-- <div class="row">
         <div class="col-md-3">
-          <!-- small box -->
+          &lt;!&ndash; small box &ndash;&gt;
           <div class="small-box bg-1">
             <div class="inner">
               <h3>{{{totalusage}}}</h3>
@@ -17,7 +56,7 @@
         </div>
 
         <div class="col-md-3">
-          <!-- small box -->
+          &lt;!&ndash; small box &ndash;&gt;
           <div class="small-box bg-2">
             <div class="inner">
               <h3>{{{totalactiveusers}}} / {{{totalsuspendedusers}}}</h3>
@@ -31,7 +70,7 @@
         </div>
 
         <div class="col-md-3">
-          <!-- small box -->
+          &lt;!&ndash; small box &ndash;&gt;
           <div class="small-box bg-3">
             <div class="inner">
               <h3>{{{totalcourses}}}</h3>
@@ -45,11 +84,10 @@
         </div>
 
         <div class="col-md-3">
-          <!-- small box -->
+          &lt;!&ndash; small box &ndash;&gt;
           <div class="small-box bg-4">
             <div class="inner">
               <h3>{{{onlineusers}}}</h3>
-
               <p>{{#str}}onlineusers, theme_moove{{/str}}</p>
             </div>
             <div class="icon">
@@ -57,5 +95,5 @@
             </div>
           </div>
         </div>
-    </div>
+    </div>-->
 </div>

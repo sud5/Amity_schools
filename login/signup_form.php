@@ -37,9 +37,11 @@ class login_signup_form extends moodleform implements renderable, templatable {
 
 //        $mform->addElement('header', 'createuserandpass', get_string('createuserandpass'), '');
 
-		$mform->addElement('html', '<div class="w-100 amigo-custom-form-group">');
+		$mform->addElement('html', '<div class="w-100 amigo-custom-form-group mb-3">');
 		profile_signup_fields( $mform, true );
+		$mform->addElement('html', '<div class="w-100 url-with-absolute-text">');
 		$mform->addElement( 'static', 'urldomain', '', '.amigolms.com' );
+		$mform->addElement('html', '<span class="absolute-text text-primary"><b class="fa text-warning fa-exclamation-circle"></b> URL will be activated with in 24 hrs</span></div>');
 		$mform->addElement('html', '</div>');
 
 		$mform->addElement('html', '<div class="grid grid-col-lg-2 w-100">');

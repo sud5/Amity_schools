@@ -4,7 +4,7 @@ body #region-main {
 
 body#page-login-signup {
   background: #efefef;
-  background-image: url(http://localhost/amigo/Amity_schools/theme/image.php/moove/theme/1587376050/login_bg);
+  background-image: url(https://amigolms.com/theme/image.php/moove/theme/1587553236/login_bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,14 +96,16 @@ body#page-login-signup {
 }
 
 #fitem_id_urldomain {
+  height: 40px;
   .col-md-3 {
     display: none !important;
   }
   .col-md-9 {
     position: relative;
     border: 2px solid #ced4da;
-    left: -2px;
-    padding-left: 10px;
+    background:#ced4da;
+    //left: -2px;
+
     @media(min-width: 992px) {
       .form-control-static {
         position: absolute;
@@ -146,5 +148,24 @@ body#page-login-signup {
   overflow: hidden;
   &>div{
     white-space: nowrap;
+  }
+}
+
+.url-with-absolute-text{
+  position: relative;
+  width: 100%;
+  flex: 50%;
+  max-width: 50%;
+
+  .absolute-text{
+    position: absolute;
+    width: 100%;
+    white-space: nowrap;
+    top: 43px;
+    left: -100%;
+    font-size: 80%;
+    i{
+      font-size: 15px;
+    }
   }
 }
