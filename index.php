@@ -419,8 +419,8 @@ if ( ! isloggedin() ) { ?>
 
 				<div class="col-md-3">
 					<h4>Contact Us</h4>
-					<p>phone no :7428001444 </p>
-					<p>Email id :info@gmail.com </p>
+                <p>Phone no:+91-7428001444 </p>
+                <p>Email:amigolms@amityonline.com </p>
 
 				</div>
 
