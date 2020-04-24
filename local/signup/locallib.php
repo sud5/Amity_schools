@@ -102,6 +102,7 @@ class local_signup_handler {
     $data->submitbutton = 'Save new company';
     $data->title = '';
     $data->description =''; 
+    $data->phone = $user->phone1;
 
         // print_object($data);die;
     self::create_company_data($data,$user->id,$schoolname);

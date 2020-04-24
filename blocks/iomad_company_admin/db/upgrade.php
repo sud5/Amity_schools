@@ -184,6 +184,17 @@ function xmldb_block_iomad_company_admin_upgrade($oldversion) {
         //  savepoint reached.
         upgrade_plugin_savepoint(true, 2018090600, 'block', 'iomad_company_admin');
     }
+    
+        // add new role capability
+    if ($oldversion < 2019032103) {
+        $table = new xmldb_table('company');
+        $field = new xmldb_field('phone');
+        $field->set_attributes(XMLDB_TYPE_INTEGER, '20', null, null, null, null, 'companyterminated');
+        if (!$dbman->field_exists($table, $field)) {
+            $dbman->add_field($table, $field);
+        }
+       upgrade_plugin_savepoint(true, 2019032103, 'block', 'iomad_company_admin');
+    }
 
     return true;
 }

@@ -2218,3 +2218,4 @@ $string['messagedselecteduserfailed'] = 'The message was not sent to user {$a->f
 $string['previewhtml'] = 'HTML format preview';
 $string['sitemessage'] = 'Message users';
 $string['phone1'] = 'Phone Number';
+$string['missinphone1'] = 'Missing Phone Number';

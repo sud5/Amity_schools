@@ -88,9 +88,8 @@ class login_signup_form extends moodleform implements renderable, templatable {
 //        $mform->setForceLtr('email2');
 
 		$mform->addElement( 'text', 'phone1', get_string( 'phone1' ), 'placeholder="Phone Number" maxlength="100" size="30"' );
-//		$mform->setType( 'phone1', core_user::get_property_type( 'phone' ) );
-		$mform->addRule( 'phone1', get_string( 'missinphone1' ), 'required', null, 'client' );
-//		$mform->setForceLtr( 'email' );
+    $mform->setType('phone1', PARAM_RAW);
+		$mform->addRule('phone1', 'Numeric Values Only', 'numeric', null, 'client');
 		$mform->addElement('html', '</div>');
 
 		/*$mform->addElement('text', 'city', get_string('city'), 'placeholder="Your City/Town"maxlength="120" size="20"');

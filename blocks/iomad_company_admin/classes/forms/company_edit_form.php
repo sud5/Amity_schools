@@ -59,7 +59,7 @@ class company_edit_form extends \company_moodleform {
         $mform = & $this->_form;
 
         $strrequired = get_string('required');
-
+//print_object($this);die;
         $mform->addElement('hidden', 'companyid', $this->companyid);
         $mform->setType('companyid', PARAM_INT);
         $mform->addElement('hidden', 'currentparentid', $this->parentcompanyid);
@@ -92,7 +92,7 @@ class company_edit_form extends \company_moodleform {
 
         $mform->addElement('text', 'shortname',
                             get_string('companyshortname', 'block_iomad_company_admin'),
-                            'maxlength="25" size="25"');
+                            'maxlength="25" size="50"');
         $mform->setType('shortname', PARAM_NOTAGS);
         $mform->addRule('shortname', $strrequired, 'required', null, 'client');
 
@@ -101,21 +101,28 @@ class company_edit_form extends \company_moodleform {
         $mform->setType('parentid', PARAM_INT);
         $mform->setType('templates', PARAM_RAW);
         $mform->setType('previousroletemplateid', PARAM_INT);
-
-        $mform->addElement('text', 'city',
-                            get_string('companycity', 'block_iomad_company_admin'),
-                            'maxlength="50" size="50"');
-        $mform->setType('city', PARAM_NOTAGS);
-        $mform->addRule('city', $strrequired, 'required', null, 'client');
+        
+        $mform->addElement( 'text', 'phone', get_string( 'phone1' ), ' maxlength="100" size="50"' );
+        $mform->setType('phone', PARAM_RAW);
+		    $mform->addRule('phone', 'Numeric Values Only', 'numeric', null, 'client');
+//       if(isset($this->phone1) && ($this->phone1 !== 0)){
+//       $mform->setDefault('phone1', $this->phone1);
+//       }
 
         /* copied from user/editlib.php */
         $choices = get_string_manager()->get_list_of_countries();
         $choices = array('' => get_string('selectacountry').'...') + $choices;
         $mform->addElement('select', 'country', get_string('selectacountry'), $choices);
-        $mform->addRule('country', $strrequired, 'required', null, 'client');
+        $mform->addRule('country', '', '', null, 'client');
         if (!empty($CFG->country)) {
             $mform->setDefault('country', $CFG->country);
         }
+        
+        $mform->addElement('text', 'city',
+                            get_string('companycity', 'block_iomad_company_admin'),
+                            'maxlength="50" size="50"');
+        $mform->setType('city', PARAM_NOTAGS);
+        $mform->addRule('city', '', '', null, 'client');
 
         /* === Company email notifications === */
          $mform->addElement('header', 'manageremails', get_string('manageremails', 'block_iomad_company_admin'));
@@ -143,6 +150,7 @@ class company_edit_form extends \company_moodleform {
         $mform->setDefault('managerdigestday', 0);
         $mform->addHelpButton('managerdigestday', 'managerdigestday', 'block_iomad_company_admin');
 
+        $mform->addElement('html', '<div id=amigocompanyform>');
         if (iomad::has_capability('local/email:edit', $context)) {
             // Add in the company email template selector.
             $emailtemplates = \company::get_email_templates($this->companyid);
@@ -520,6 +528,9 @@ class company_edit_form extends \company_moodleform {
             $mform->addElement('hidden', 'showgrade', $this->companyrecord->showgrade);
             $mform->setType('showgrade', PARAM_INT);
         }
+        
+         $mform->addElement('html', '</div>');
+         
         $submitlabel = null; // Default.
         if ($this->isadding) {
             $submitlabel = get_string('saveasnewcompany', 'block_iomad_company_admin');
