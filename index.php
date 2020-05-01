@@ -277,22 +277,19 @@ if ( ! isloggedin() ) { ?>
 					</h2>
 				</div><!-- End col with offset -->
 				<div class="col-12">
-					<ul class="grid grid-col-lg-5 grid-col-xs-3  grid-col-md-5 list-unstyled">
+					<ul class="grid grid-col-lg-4 grid-col-xs-3  grid-col-md-4 list-unstyled">
 
-						<li class="d-flex align-items-center">
-							<img src="amigo/assets/images/amity-university.jpg" alt="1" class="img-fluid">
+						<li class="d-flex align-items-center justify-content-center">
+                <img src="amigo/assets/images/amity-university.jpg" alt="1" class="img-fluid" width="200">
 						</li>
-						<li class="d-flex align-items-center">
+						<li class="d-flex align-items-center justify-content-center">
 							<img src="amigo/assets/images/amity-university-online.png" alt="1" class="img-fluid">
 						</li>
-						<li class="d-flex align-items-center">
+						<li class="d-flex align-items-center justify-content-center">
 							<img src="amigo/assets/images/amity-future-acadmy2.png" alt="1" class="img-fluid">
 						</li>
-						<li class="d-flex align-items-center">
+						<li class="d-flex align-items-center justify-content-center">
 							<img src="amigo/assets/images/amity-opne-learn.jpeg" alt="1" class="img-fluid">
-						</li>
-						<li class="d-flex align-items-center">
-							<img src="amigo/assets/images/amity-school-dubai.png" alt="1" class="img-fluid">
 						</li>
 					</ul>
 				</div>
