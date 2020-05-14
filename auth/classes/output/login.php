@@ -153,7 +153,7 @@ class login implements renderable, templatable {
         $data->logintoken = $this->logintoken;
         //customization for adding tenant name on the page
         global $DB, $SITE;
-        $link .= $_SERVER['HTTP_HOST'];
+        $link = $_SERVER['HTTP_HOST'];
         $string = $link;
         $search = ".amitylms.com";
         $position = strpos($string, $search);

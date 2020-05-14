@@ -1942,6 +1942,8 @@ class core_course_renderer extends plugin_renderer_base {
 
         $output = '';
         $courses  = enrol_get_my_courses('summary, summaryformat');
+        $courses_misc = $DB->get_records('course',array('category' => 1));
+        $courses = array_merge($courses, $courses_misc);
         $rhosts   = array();
         $rcourses = array();
         if (!empty($CFG->mnet_dispatcher_mode) && $CFG->mnet_dispatcher_mode==='strict') {
