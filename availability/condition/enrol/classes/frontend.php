@@ -62,6 +62,6 @@ class frontend extends \core_availability\frontend {
           }
         }
 
-        return false;
+        return true;
     }
 }

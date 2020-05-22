@@ -8,7 +8,8 @@ $courseid = required_param('courseid', PARAM_INT);
 $configs = get_config('availability_enrol');
 $match = false;
 foreach ($configs as $config => $configvalue) {
-  if ($coupon_code == $configvalue) {
+  if($configvalue == '') continue;
+  if (trim($coupon_code) == trim($configvalue)) {
     $match = true;
   }
 }

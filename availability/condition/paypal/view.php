@@ -218,10 +218,20 @@ echo $OUTPUT->header();
  <?php
 // Finish the page.
 echo $OUTPUT->footer();
+$link  = "$CFG->wwwroot/course/view.php?id=$COURSE->id";
+$module_id = $DB->get_field('modules', 'id', array('name' => 'customcert'));
+$records = $DB->get_records('course_modules', array('module' => $module_id, 'course' => $COURSE->id, 'visible' => 1,
+  'deletioninprogress' => 0), '', 'id,availability');
+foreach ($records as $record => $recordvalue) {
+  if (strpos($recordvalue->availability, 'enrol') > 0) {
+    $link = "$CFG->wwwroot/mod/customcert/view.php?id=$recordvalue->id";
+  }
+}
 ?>
 <script>
 	$("#apply").click(function(){
-		if($('#promo_code').val()!=''){
+    $('#message').html("");
+		if($('#coupon_code').val() !== ''){
 			$.ajax({
         		url: '<?php echo $CFG->wwwroot; ?>/availability/condition/enrol/ajax_coupon_record.php',
 						type: "POST",
@@ -232,9 +242,9 @@ echo $OUTPUT->footer();
 						},
 						success: function(dataResult){
 							var dataResult = JSON.parse(dataResult);
-              console.log(dataResult);
 							if(dataResult.statusCode==200){
-								$('#message').html("Promocode applied successfully, please visit course page to access your certificate");
+                $('#message').html("Promocode applied successfully, we are redirecting you to your certificate");
+                window.location.href = "<?php echo $link; ?>";
 							}
 							else if(dataResult.statusCode==202){
 								$('#message').html("Invalid promocode!");
