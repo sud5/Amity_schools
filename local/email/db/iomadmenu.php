@@ -19,16 +19,16 @@
 function local_email_menu() {
 
         return array(
-            'EmailTemplates' => array(
-                'category' => 'CompanyAdmin',
-                'tab' => 1,
-                'name' => get_string('blocktitle', 'local_email'),
-                'url' => '/local/email/template_list.php',
-                'cap' => 'local/email:list',
-                'icondefault' => 'emailtemplates',
-                'style' => 'company',
-                'icon' => 'fa-inbox',
-                'iconsmall' => 'fa-gear'
-            )
+//            'EmailTemplates' => array(
+//                'category' => 'CompanyAdmin',
+//                'tab' => 1,
+//                'name' => get_string('blocktitle', 'local_email'),
+//                'url' => '/local/email/template_list.php',
+//                'cap' => 'local/email:list',
+//                'icondefault' => 'emailtemplates',
+//                'style' => 'company',
+//                'icon' => 'fa-inbox',
+//                'iconsmall' => 'fa-gear'
+//            )
         );
 }
