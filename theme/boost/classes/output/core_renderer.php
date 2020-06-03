@@ -70,10 +70,13 @@ class core_renderer extends \core_renderer {
      * @return string HTML to display the main header.
      */
     public function full_header() {
-        global $PAGE;
+        global $PAGE, $COURSE;
 
         $header = new stdClass();
+        //customization for disallowing manager for home page setting
+        if(is_siteadmin() || $COURSE->id != 1){
         $header->settingsmenu = $this->context_header_settings_menu();
+        } 
         $header->contextheader = $this->context_header();
         $header->hasnavbar = empty($PAGE->layout_options['nonavbar']);
         $header->navbar = $this->navbar();
