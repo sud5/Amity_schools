@@ -188,7 +188,7 @@ class company_user {
         }
         if ($DB->get_records('company_users', array('userid' => $userid, 'managertype' => 2,
                                                     'companyid' => $company->id))) {
-            $departmentmanagerrole = $DB->get_record('role', array('shortname' => 'departmentmanager'));
+            $departmentmanagerrole = $DB->get_record('role', array('shortname' => 'companydepartmentmanager'));
             role_unassign($departmentmanagerrole->id, $userid, $context->id);
         }
 
