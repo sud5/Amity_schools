@@ -229,6 +229,17 @@ function block_iomad_company_admin_menu() {
                 'icon' => 'fa-file-text',
                 'iconsmall' => 'fa-user',
             ),
+             'enrolbulkuser' => array(
+                'category' => 'CourseAdmin',
+                'tab' => 3,
+                'name' => get_string('enrolbulkuser', 'block_iomad_company_admin'),
+                'url' => '/local/mass_enroll/mass_enroll.php',
+                'cap' => 'block/iomad_company_admin:company_course_users',
+                'icondefault' => 'down',
+                'style' => 'course',
+                'icon' => 'fa-file-text',
+                'iconsmall' => 'fa-user',
+            ),
 //            'managegroups' => array(
 //                'category' => 'CourseAdmin',
 //                'tab' => 3,

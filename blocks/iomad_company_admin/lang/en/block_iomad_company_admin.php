@@ -704,3 +704,6 @@ $string['clientreporter'] = 'Client report only';
 $string['archetypecompanyreporter_role'] = 'School report only';
 $string['companyreporter_role'] = 'School report only';
 $string['companyreporter'] = 'School report only';
+
+
+$string['enrolbulkuser'] = 'Bulk enrolments';
