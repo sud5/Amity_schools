@@ -97,7 +97,7 @@ if ( ! isloggedin() ) { ?>
 							Taking Student Learning Online With Amigo For School / Institute / University
 						</h1>
 						<p>
-							We’re here to provide FREE access to Amity’s powerful Learning Management System!
+							We’re here to provide the access to Amity’s powerful Learning Management System!
 						</p>
 						<div class="w-100 mt-5 d-flex">
 							<a href=<?php echo $CFG->wwwroot . '/login/signup.php' ?>>
