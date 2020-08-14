@@ -2309,7 +2309,12 @@ class core_course_renderer extends plugin_renderer_base {
                     // No "break" here. If there are no enrolled courses - continue to 'Available courses'.
 
                 case FRONTPAGEALLCOURSELIST:
+                     if(is_siteadmin()){
                     $availablecourseshtml = $this->frontpage_available_courses();
+                    } else{
+                    $availablecourseshtml = $this->frontpage_my_courses();
+                    }
+
                     if (!empty($availablecourseshtml)) {
                         $output .= $this->frontpage_part('skipavailablecourses', 'frontpage-available-course-list',
                             get_string('availablecourses'), $availablecourseshtml);
